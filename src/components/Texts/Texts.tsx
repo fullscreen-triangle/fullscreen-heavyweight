@@ -69,10 +69,10 @@ function Texts() {
       {/* intro texts */}
       <div id="intro">
         <h1 ref={titleRef} {...cursorHover.text}>
-          UNKNOWN PLEASURES
+          FULLSCREEN HEAVYWEIGHT
         </h1>
         <p ref={descriptionRef} {...cursorHover.text}>
-          a tiny web experiment.
+          a glorius track visualization.
         </p>
       </div>
       <div ref={playButtonRef} id="start">
@@ -82,24 +82,24 @@ function Texts() {
           onClick={handleStart}
         >
           <Play />
-          <span>LOSE CONTROL</span>
+          <span>ENABLE FULLSCREEN</span>
         </button>
       </div>
       <footer ref={footerRef}>
         <div id="credits">
-          <p {...cursorHover.text}>love will tear us apart by joy division.</p>
-          <p {...cursorHover.text}>* I do not own the music.</p>
+          <p {...cursorHover.text}> DJ Fresh - Heavyweight Side A</p>
+          <p {...cursorHover.text}>DIGITAL SOUNDBOY PRESENTS</p>
         </div>
         <div id="source">
           <p>
             made by{" "}
             <a
-              href="https://pouria.dev"
+              href="https://github.com/ksachikonye"
               title="pouria.dev"
               target="_blank"
               {...cursorHover.link}
             >
-              pouria.dev
+              FULLSCREEN TRIANGLE
             </a>
             .
           </p>
@@ -124,14 +124,13 @@ function Texts() {
        * it was easier to put them on screen as independet html element
        * rather than assign it to a three.js object (line)
        */}
-      <p className="texts stage-five then-love">THEN LOVE</p>
+      <p className="texts stage-five then-love">BE THE ONE</p>
       <p className="texts stage-five love-will-tear-us-aprat">
-        LOVE WILL TEAR US APART
+        ONE
       </p>
       <div className="stage-five-wrapper">
         <p className="texts stage-five love-will-tear-us-aprat-2">
-          LOVE WILL TEAR US APART
-        </p>
+ONE        </p>
         <div id="again-btn-wrapper">
           <button {...cursorHover.link} onClick={handleAgain}>
             <Repeat />

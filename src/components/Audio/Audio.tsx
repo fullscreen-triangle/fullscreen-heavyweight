@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 import { useCustomControls } from "../../hooks";
-import trackPath from "../../assets/track.mp3";
+import trackPath from "../../assets/djs_fresh_heavyweight.mp3";
 import useStore, { Stage } from "../../store";
 
 function Audio() {

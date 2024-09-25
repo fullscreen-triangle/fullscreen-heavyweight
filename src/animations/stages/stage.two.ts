@@ -90,7 +90,7 @@ export function useAnimations() {
     if (stage !== Stage.Two) return;
 
     // duration of the first animation, "line explosion"
-    const duration = 3;
+    const duration = 13;
     // duration for surfing camera above the lines
     const surfingDuration = 14;
 

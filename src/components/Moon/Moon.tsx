@@ -55,8 +55,8 @@ const Moon: FC = () => {
   const uniforms = useMemo(
     () => ({
       uTime: { value: 0 },
-      uSpeed: { value: 3.5 },
-      uFrequency: { value: 50 },
+      uSpeed: { value: 1.5 },
+      uFrequency: { value: 86 },
       uAmplitude: { value: 1 },
     }),
     []

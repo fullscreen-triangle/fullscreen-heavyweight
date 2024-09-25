@@ -56,7 +56,7 @@ export function useAnimations() {
         lineOrPlane.position,
         {
           z: index * -0.02,
-          duration: 10,
+          duration: 20,
           delay: 4,
           ease: "none",
         },
@@ -73,7 +73,7 @@ export function useAnimations() {
           uniforms.uWaveExpandAmplitude,
           {
             value: 0,
-            duration: 2.5,
+            duration: 12.5,
             ease: "power2.out",
             delay: 1,
           },
@@ -87,7 +87,7 @@ export function useAnimations() {
       {
         z: 0,
         x: 0,
-        duration: 2.5,
+        duration: 12.5,
         ease: "elastic",
       },
       Label.Start

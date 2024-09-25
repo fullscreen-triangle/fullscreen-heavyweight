@@ -75,7 +75,7 @@ export function useAnimations() {
         group.position,
         {
           z: -1 * index,
-          duration: 2,
+          duration: 30,
           ease: "power1.out",
         },
         Label.Start
@@ -92,7 +92,7 @@ export function useAnimations() {
           uniforms.uWaveExpandPower,
           {
             value: 4.5,
-            duration: 1,
+            duration: 15,
             ease: "power1.out",
             onComplete: () => {
               uniforms.uWaveSpeed1.value = 0.08;
@@ -107,7 +107,7 @@ export function useAnimations() {
           mesh.scale,
           {
             x: 18,
-            duration: 1,
+            duration: 20,
             ease: "power1.out",
           },
           Label.Start
@@ -117,7 +117,7 @@ export function useAnimations() {
           uniforms.uWaveExpandAmplitude,
           {
             value: 1.4,
-            duration: 1,
+            duration: 20,
             ease: "power1.out",
           },
           Label.Start
@@ -130,7 +130,7 @@ export function useAnimations() {
       {
         z: -34.4,
         y: 25,
-        duration: 0.8,
+        duration: 9.8,
         ease: "power2.out",
         onComplete: () => {
           stars!.visible = false;
@@ -144,7 +144,7 @@ export function useAnimations() {
       camera.rotation,
       {
         x: -Math.PI * 0.5,
-        duration: 0.8,
+        duration: 9.8,
         ease: "power2.out",
       },
       Label.Start
@@ -154,7 +154,7 @@ export function useAnimations() {
       camera.rotation,
       {
         z: -Math.PI - (Math.PI / 4) * 3,
-        duration: 0.8,
+        duration: 10.8,
         ease: "power1.out",
       },
       `${Label.Start}+=0.3`
@@ -164,7 +164,7 @@ export function useAnimations() {
       camera.position,
       {
         y: 50,
-        duration: 0.8,
+        duration: 10.8,
         ease: "power1.out",
       },
       "<"
@@ -174,7 +174,7 @@ export function useAnimations() {
       camera.rotation,
       {
         z: -Math.PI - (Math.PI / 4) * 5,
-        duration: 2.5,
+        duration: 12.5,
         ease: "power2.out",
       },
       "<51%"
@@ -194,7 +194,7 @@ export function useAnimations() {
             index > focusedLineIndex
               ? `-=${distanceToFocuesdLine}`
               : `+=${distanceToFocuesdLine}`,
-          duration: 3,
+          duration: 13,
           delay: normalizedIndexDiffToFocusedLine * 0.5,
           ease: "power2.out",
         },
@@ -214,7 +214,7 @@ export function useAnimations() {
       ".texts.then-love",
       {
         opacity: 1,
-        duration: 1.2,
+        duration: 15.2,
         ease: "power2.out",
       },
       Label.TearApart
@@ -224,7 +224,7 @@ export function useAnimations() {
       camera.position,
       {
         y: 15,
-        duration: 1.5,
+        duration: 15,
         ease: "power2.out",
       },
       `${Label.TearApart}+=1.5`
@@ -234,7 +234,7 @@ export function useAnimations() {
       ".texts.then-love",
       {
         opacity: 0,
-        duration: 0.6,
+        duration: 16,
         ease: "power2.out",
       },
       `${Label.TearApart}+=1.5`
@@ -246,7 +246,7 @@ export function useAnimations() {
         opacity: 1,
         scale: 1,
         rotate: "-45_ccw",
-        duration: 1.5,
+        duration: 10.5,
         ease: "power1.out",
       },
       `${Label.TearApart}+=1.6`
@@ -257,7 +257,7 @@ export function useAnimations() {
       {
         letterSpacing: "0.7rem",
         autoRound: false,
-        duration: 2,
+        duration: 12,
         ease: "power1.out",
       },
       `${Label.TearApart}+=2`
@@ -286,7 +286,7 @@ export function useAnimations() {
         group.position,
         {
           z: 0,
-          duration: 1.5,
+          duration: 11.5,
           ease: "power1.out",
         },
         Label.TearApart2
@@ -296,7 +296,7 @@ export function useAnimations() {
         group.position,
         {
           z: -1 * index * 0.1,
-          duration: 1.5,
+          duration: 9.5,
           ease: "power1.out",
         },
         `${Label.TearApart2}+=2`
@@ -323,7 +323,7 @@ export function useAnimations() {
           mesh.scale,
           {
             x: 1,
-            duration: 1,
+            duration: 10,
             ease: "power1.out",
           },
           Label.TearApart2
@@ -333,7 +333,7 @@ export function useAnimations() {
           uniforms.uWaveExpandPower,
           {
             value: controls.uniforms.uWaveExpandPower,
-            duration: 2,
+            duration: 12,
             ease: "power1.out",
           },
           Label.TearApart2
@@ -343,7 +343,7 @@ export function useAnimations() {
           uniforms.uWaveExpandAmplitude,
           {
             value: controls.uniforms.uWaveExpandAmplitude,
-            duration: 2,
+            duration: 12,
             ease: "power1.out",
           },
           Label.TearApart2
@@ -353,7 +353,7 @@ export function useAnimations() {
           mesh.scale,
           {
             x: 1.15,
-            duration: 0.8,
+            duration: 9.8,
             ease: "power1.out",
           },
           `${Label.TearApart2}+=2`
@@ -363,7 +363,7 @@ export function useAnimations() {
           mesh.scale,
           {
             x: 14,
-            duration: 8,
+            duration: 18,
             ease: "power1.out",
           },
           `${Label.TearApart2}+=3.5`
@@ -383,7 +383,7 @@ export function useAnimations() {
           uniforms.uWaveExpandAmplitude,
           {
             value: 3.5,
-            duration: 8,
+            duration: 18,
             ease: "power1.out",
           },
           `${Label.TearApart2}+=3.5`
@@ -395,7 +395,7 @@ export function useAnimations() {
       fog,
       {
         density: 0.001,
-        duration: 2,
+        duration: 12,
         ease: "power2.out",
       },
       Label.TearApart2
@@ -406,7 +406,7 @@ export function useAnimations() {
       {
         opacity: 0,
         scale: 0,
-        duration: 0.75,
+        duration: 10.75,
         ease: "power2.out",
       },
       `${Label.TearApart2}-=0.25`
@@ -416,7 +416,7 @@ export function useAnimations() {
       ".texts.again",
       {
         opacity: 1,
-        duration: 1.5,
+        duration: 5.5,
         ease: "power2.out",
       },
       Label.TearApart2
@@ -428,7 +428,7 @@ export function useAnimations() {
         y: 20,
         z: -3.8,
         x: 0,
-        duration: 1.5,
+        duration: 15,
         ease: "power1.out",
       },
       Label.TearApart2
@@ -439,7 +439,7 @@ export function useAnimations() {
       {
         z: -Math.PI,
         x: -1.8,
-        duration: 1.5,
+        duration: 15,
         ease: "power1.out",
       },
       Label.TearApart2
@@ -450,7 +450,7 @@ export function useAnimations() {
       {
         opacity: 0,
         scale: 0,
-        duration: 0.5,
+        duration: 7.5,
         ease: "power2.out",
       },
       `${Label.TearApart2}+=1.8`
@@ -461,7 +461,7 @@ export function useAnimations() {
       {
         opacity: 1,
         scale: 1,
-        duration: 1.5,
+        duration: 7.5,
         ease: "power2.out",
       },
       `${Label.TearApart2}+=2.2`
@@ -472,7 +472,7 @@ export function useAnimations() {
       {
         y: 10,
         z: -1,
-        duration: 1.5,
+        duration: 9.5,
         ease: "power1.out",
       },
       `${Label.TearApart2}+=2`
@@ -482,7 +482,7 @@ export function useAnimations() {
       camera.position,
       {
         z: -30,
-        duration: 4,
+        duration: 14,
         ease: "power1.in",
       },
       `${Label.TearApart2}+=3.5`
@@ -492,7 +492,7 @@ export function useAnimations() {
       camera.rotation,
       {
         x: -2.3,
-        duration: 1.5,
+        duration: 9.5,
         ease: "power1.out",
       },
       `${Label.TearApart2}+=2`
@@ -503,7 +503,7 @@ export function useAnimations() {
       {
         opacity: 0,
         scale: 0,
-        duration: 1,
+        duration: 10,
         ease: "power2.out",
       },
       `${Label.TearApart2}+=3.5`
@@ -568,7 +568,7 @@ export function useAnimations() {
       ".stage-five-wrapper",
       {
         opacity: 1,
-        duration: 3,
+        duration: 13,
         ease: "power1.out",
       },
       `${Label.TearApart2}+=4`
@@ -579,7 +579,7 @@ export function useAnimations() {
       {
         opacity: 1,
         y: 0,
-        duration: 3,
+        duration: 13,
         ease: "power1.out",
       },
       `${Label.TearApart2}+=4`
@@ -590,7 +590,7 @@ export function useAnimations() {
       {
         opacity: 1,
         y: 0,
-        duration: 3,
+        duration: 13,
         ease: "power1.out",
         onComplete: () => {
           setTimeout(() => {

@@ -8,40 +8,39 @@ interface Props {
 const LineTexts: FC<Props> = (props) => {
   return (
     <>
-      {props.index === 24 ? (
+      {props.index === 84 ? (
         <Html position={[-5, 5, 1]}>
           <p className="texts stage-three when-routine-bites-hard">
-            WHEN ROUTINE BITES HARD
+             ONE WE NEED
           </p>
         </Html>
       ) : null}
 
-      {props.index === 36 ? (
+      {props.index === 126 ? (
         <Html position={[-2, -2, 1]}>
           <p className="texts stage-three and-ambitions-are-low">
-            AND AMBITIONS ARE LOW
+            BE THE ONE
           </p>
         </Html>
       ) : null}
 
-      {props.index === 54 ? (
+      {props.index === 154 ? (
         <Html position={[-5, 12, 1]}>
           <p className="texts stage-three and-resentment-rides-high">
-            AND RESENTMENT RIDES HIGH
-          </p>
+             WE NEED          </p>
         </Html>
       ) : null}
 
       {props.index === 0 ? (
         <Html position={[0, 1, 1]}>
           <p className="texts stage-four but-emotions-wont-grow">
-            BUT EMOTIONS <br /> WON'T GROW
+            BE THE ONE 
           </p>
           <p className="texts stage-four and-were-changing-our-ways">
-            AND WE'RE <br /> CHANGING OUR WAYS
+            WE NEED 
           </p>
           <p className="texts stage-four taking-different-roads">
-            TAKING <br /> DIFFERENT ROADS
+            THE ONE
           </p>
         </Html>
       ) : null}
@@ -54,7 +53,7 @@ const LineTexts: FC<Props> = (props) => {
 
       {props.index === 0 ? (
         <Html position={[0, 0, 2]}>
-          <p className="texts stage-five love">LOVE</p>
+          <p className="texts stage-five love">ONE</p>
         </Html>
       ) : null}
     </>

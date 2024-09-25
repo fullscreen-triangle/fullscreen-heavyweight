@@ -36,7 +36,7 @@ export function useAnimations() {
     stars!.visible = true;
     moon!.visible = true;
 
-    const duration = 3;
+    const duration = 15;
 
     const timeline = createTimeline(pause, reverse, {
       onUpdate: () => {

@@ -31,8 +31,8 @@ export function useAnimations() {
     // only run when the stage is three
     if (stage !== Stage.Three) return;
 
-    const duration = 2.5;
-    const textDuration = 3;
+    const duration = 22.5;
+    const textDuration = 5;
     const surfingDuration = 25;
 
     const timeline = createTimeline(pause, reverse, {

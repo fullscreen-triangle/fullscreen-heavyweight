@@ -91,12 +91,12 @@ const Lines: FC = () => {
   useStageAnimations();
 
   // initialize an array to contain lines
-  const lineCount = useMemo(() => 69, []);
+  const lineCount = useMemo(() => 97, []);
   const linesList = useMemo(() => [...new Array(lineCount)], [lineCount]);
 
   return (
     <>
-      <Center position-z={0.5}>
+      <Center position-z={0.7}>
         {useMemo(
           () => (
             <group ref={linesRef}>
